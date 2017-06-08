@@ -1,0 +1,23 @@
+{
+  "name": "jesusslim/cain",
+  "description": "mix service & closure to workflow",
+  "license": "MIT",
+  "keywords": ["workflow","service"],
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "jesusslim",
+      "email": "755808379@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "jesusslim/pinject": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Cain\\": "Cain/"
+    }
+  }
+}
