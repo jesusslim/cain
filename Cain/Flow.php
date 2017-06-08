@@ -215,11 +215,16 @@ class Flow
     }
 
     /**
+     * @param bool $reset_container
      * flush
      */
-    public function flush(){
+    public function flush($reset_container = true){
         $this->status = self::STATUS_NOT_BEGIN;
         $this->error_info = null;
         $this->block_key = null;
+        if ($reset_container) {
+            $this->container->flush();
+            $this->container->mapData(InjectorInterface::class,$this->container);
+        }
     }
 }
