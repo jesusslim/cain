@@ -38,10 +38,11 @@ mix service &amp; closure to workflow
 	
 	/*********************************************/
 	/* result_injs will inject the datas of result(or the whole result) to container,so that the next workflow can use them */
+	/* the key is the keyname in result,the value is the keyname that we want to set to container. */
 	
 	$result_injs = [
 	    'test_info' => [
-	        'id' => 'foo',
+	        'id' => 'foo', //means container.foo = result.id
 	//        \Cain\Flow::PARAMS_NAME_SELF => 'whole'
 	    ]
 	];
